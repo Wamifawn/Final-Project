@@ -35,8 +35,8 @@ public class ResourceManagement
     
     for (i = 0; i <= fileNames.length - 1, ++i) {
     	String fileName = fileNames[i];
-    	Department dpt = new Department(fileName);
-    	departmentPQ.add(dpt);
+    	Department dept = new Department(fileName);
+    	departmentPQ.add(dept);
     }
     
     /* Simulate the algorithm for picking the items to purchase */
