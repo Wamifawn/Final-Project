@@ -1,3 +1,5 @@
+package src;
+
 import java.io.*;
 import java.util.*;
 
@@ -30,7 +32,14 @@ public class ResourceManagement
   public ResourceManagement( String fileNames[], Double budget )
   {
     /* Create a department for each file listed in fileNames */
+    this.budget = budget;
+    this.remainingBudget = budget;
     
+    for (i = 0; i <= fileNames.length - 1, ++i) {
+    	String fileName = fileNames[i];
+    	Department dpt = new Department(fileName);
+    	departmentPQ.add(dpt);
+    }
     
     /* Simulate the algorithm for picking the items to purchase */
     /* Be sure to print the items out as you purchase them */
