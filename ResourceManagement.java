@@ -12,8 +12,8 @@ public class ResourceManagement
     public static void printName()
     {
         System.out.println("This solution was completed by:");
-        System.out.println("student name");
-        System.out.println("N/A");
+        System.out.println("Mark Guzman, Garrison Lazard");
+        System.out.println("Mfl906, Hub017");
     }
 
     public ResourceManagement(String fileNames[], Double budget)
